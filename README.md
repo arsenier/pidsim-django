@@ -24,12 +24,23 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 
-### Создание миграции (если необходимо)
+### Создание проекта
 
 ```
-python3 manage.py makemigrations
-python3 manage.py migrate
+django-admin startproject pidsim
+cd pidsim
+python3 manage.py startapp pid
 ```
+
+### Добавление файлов проекта
+
+Здесь необходимо добавить файлы проекта в соответствующие папки и файлы в них:
+
+- `pidsim/urls.py`
+- `pidsim/settings.py`
+- `pid/static/css/style.css`
+- `pid/templates/pid/index.html`
+- `pid/views.py`
 
 ### Запуск сервера
 
